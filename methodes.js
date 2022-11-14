@@ -86,7 +86,82 @@ var a_methods = a.slice(3,8);//ya string humain beech ma se koi word uthana hu h
 // const index = 4;
 // console.log(`The character code ${sentence.charCodeAt(index)} is equal to ${sentence.charAt(index)}`);//charCodeAt per ap jo value denge ya is jagah per jaker uska  UTF-16 ka aur iska code 0-65535 hota ha code dega 
 
-const icons = '☃★♲';
-console.log(icons.codePointAt(1));//ya kaam ata ha symbol aur emoji jesi things ke unicode maloom karna ke liye
+// const icons = '☃★♲';
+// console.log(icons.codePointAt(1));//ya kaam ata ha symbol aur emoji jesi things ke unicode maloom karna ke liye
+
+// slice method
+// var text = "Apple, Banana, Kiwi";
+// var part = text.slice(7, 13); //slice method space ko bhi count karta ha aur ya 1 se shuru hota ha nake 0 se
+// console.log(part);
+// var text = "Apple, Banana, Kiwi";
+// var part = text.slice(7); //aik parameter ager ap positive de raha hu jese 7 tu shuru ke 7index ko chor ker 7 se leker akhir tak index ko print kardega 
+// console.log(part);
+// var text = "Apple, Banana, Kiwi";
+// var part = text.slice(-12); //ager ap ne negative ma value dali ha tu wo end se shuru aur last character -1 hoga aur is se pehle -2 isi tarah -12 tak ai ga aur phir -1 se leker -12 tak ki values ko print karadega
+// var text = "Apple, Banana, Kiwi";
+// var part = text.slice(-12, -6); //ab ya pehle -12 se -6 tak value print karaiga aur Banana print hoga
+// var text = "Apple, Banana, Kiwi";
+// var part = text.slice(7, 13)
+// console.log(part);
+
+   // Sub str
+// var str = "Apple, Banana, Kiwi";
+// var part = str.substr(7, 6);
+// console.log(part)// ya bhi slice ki tarah hai bas slice aur isma ya difference ha ke ye 0 se shuru hota ha aur jo value di jai ya usi value se shuru hota jese Car ko three character me tora aur substr ma dain tu ya 1 a 2 denge tu ya r dega aur ya ju second  value ap doga wo 1 se start hogi na ke 8 se
+// var str = "Apple, Banana, Kiwi";
+// var part = str.substr(7);//aik parameter dena per ya bilkul slice ki tarah kaam karega
+// console.log(part)  
+// var str = "Apple, Banana, Kiwi";
+// var part = str.substr(-4);// aur negative  value dene per ya bilkul slice ki hi tarah hi kaam keraga
+// console.log(part)
+
+// Substring
+// var str = "Apple, Banana, Kiwi";
+// var part = str.substring(7, 6);//ya bhi slice ki tarah hai bas ya 0 se shuru karta ha
+// console.log(part)
+
+//   replace()
+// var text = "Please visit Microsoft!";
+// var newText = text.replace("Microsoft", "W3Schools");
+// console.log(text);//ya replace karna ka kaam ata ha kisi value ku aur ya pehle string change nhi karta balka usi ke uper new layeer lagata ha aur ya sirf pehle hi vala ko replace kerega naka sabko 
+// var text = "Please visit Microsoft!";
+// var newText = text.replace("/MICROSOFT/i", "W3Schools");
+// console.log("this is insensitive",text);// aur ya case sensitive hota ha per ap isko insensitive bhi karsakta hu regular expression ki cheez laga ke /MICROSOFT/i ko ab ya insensitive hogia
+// var text = "Please visit Microsoft and intership in Microsoft!";
+// var newText = text.replace(/Microsoft/g, "W3Schools");
+// console.log("this is global",text)//aur ager iska sath /microsoft/g laga dain tu global ban jai ga jahan bhi hoga wahan per lag jai ga.
+// var text = "Please visit Microsoft!.Microsoft is the biggest tech giant.Microsoft and";
+// var converstion=text.replaceAll(/Microsoft/g, "W3Schools");
+// console.log(converstion)//ya method ager ap text kitna hi word kiun na hun ya sab ku change kerdega
+
+// toUpperCase()
+// var text1 = "Hello World!";
+// var text2 = text1.toUpperCase();//user for any text to upperCase 
+// var text3 = text1.toLowerCase();//user for any text to lowerCase
+// console.log(text2,text3);
+
+// // Concat()
+// var text = "hello" + ' ' +" world ";//ya method kisi bhi do elemnt ko jorna ke kaam ata ha
+// var text3 = "hello" + ' ' +" Bilal";
+// var tex2 = text.concat(text3)
+// console.log(tex2)
+
+// // trim()
+// var text = "    hello world    "
+// console.log(text.trim());//ya aga aur peeche ke sata space ko khatam kar deta ha
+// var text = "    hello world    Bilal"
+// console.log(text.trimStart());//shurur me jo space hoga ya usko khatam kerdega
+// var text = "hello world Bilal    "
+// console.log(text);//ya akhir ke space ko khatam kar dega
+
+// pad()
+// var text = "5"
+// console.log(text.padStart(4,"b"));//ya new method ha isma jahan ap zororat para wahan se start se ya end value barha lai firt parameter ma kitna barahana aur dosra ma kia barhanaha
+// var num= 5;
+// var convertnumintostring=num.toString()
+// console.log(convertnumintostring.padStart(4,"9"))
+// var num= 5;
+// var convertnumintostring=num.toString()
+// console.log(convertnumintostring.padEnd(4,"9"))//isi tarah end ma lagana hu tu padEnd use hoga
 
 
