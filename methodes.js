@@ -164,4 +164,58 @@ var a_methods = a.slice(3,8);//ya string humain beech ma se koi word uthana hu h
 // var convertnumintostring=num.toString()
 // console.log(convertnumintostring.padEnd(4,"9"))//isi tarah end ma lagana hu tu padEnd use hoga
 
+// There are 3 methods for extracting string characters:
+// charAt(position)
+// charCodeAt(position)
+// Property access [ ]
+
+// charAt()
+// var t = "Hello Bilal";
+// var t1 = t.charAt(5);// isma ap sirf index value dete hain aur wo apko uska aplphabate deta ha
+// console.log(t1);
+
+// charCodeAt()
+// var t = "Hello Bilal";
+// var t1 = t.charCodeAt(6)//ya hamain alphabet ki unicode-16 batata ha kiu ke computer hamari language nhi samjtha wo sirf 0aur1 samajtha ha tu unicode har alphabat ki aik unique identity hoti ju phir binary code ma change hoker display hoti ha aur hum usi ko dekhta hain
+// console.log(t1);
+
+// property access
+// var t = "bilal ahmed"
+// var t2 = t[1];// ya bus apka alpahbet bata aur hum uski value deta hain
+// console.log(t2)
+
+// split()
+// let baad = "bilal ahmed"
+// let at = baad.split("|");
+// console.log(at)
+
+// JavaScript Search Methods
+// String indexOf()
+// String lastIndexOf()
+// String search()
+// String match()
+// String matchAll()
+// String includes()
+// String startsWith()
+// String endsWith()
+
+
+
+// var b = "bilal ahmed hello";
+// var b_methods=b.indexOf("ahmed")// jo word jahan se shuru horaha hota ha ya uski value return karta ha
+// console.log(b_methods);
+// var b = "bilal ahmed hello ahmed  world";
+// var b_methods=b.indexOf("ahmed",12)// ager ap second parameter denge tu jo ap value denge wo wahan se dekhna shuru karega
+// console.log(b_methods);
+// var b_methods = b.lastIndexOf('ahmed')
+// console.log(b_methods)
+
+// search()
+// var b_methods = b.search('ahmed')// ya dono bilkul same bas ya regular exprression use karti ha aur index nhi karti 
+// console.log(b_methods);
+
+// var b = "bilal ahemd hello world bilal ahmed"
+// var b_methods = b.matchAll("bi")// ya word match karke uski index aik array ma deta ha aur ya "g" aur "i" laga wa hain iska matlab g batlab global i ka matlab caseinsensitive
+// console.log(b_methods);
+
 
